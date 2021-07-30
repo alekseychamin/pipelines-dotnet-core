@@ -21,6 +21,6 @@ steps:
     zipAfterPublish: True
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '0d01fa01-e307-4b38-b278-cca4bd1ec828'
+    azureSubscription: 'ConnectionARM'
     appName: 'app-firstpipeline'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
