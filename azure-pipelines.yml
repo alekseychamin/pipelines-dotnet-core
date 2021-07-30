@@ -23,4 +23,4 @@ steps:
   inputs:
     azureSubscription: 'ConnectionARM'
     appName: 'app-firstpipeline'
-    package: $(System.DefaultWorkingDirectory)/**/*.zip
+    package: $(Build.ArtifactStagingDirectory)/**/*.zip
